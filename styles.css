@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: "DotGothic16", sans-serif;
+}
+
+.background-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-layer {
+  width: 7680px; /* Set this to a multiple of your image width */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.background-layer#layer3 {
+  background-image: url("images/ground.png");
+}
+
+.background-layer#layer2 {
+  background-image: url("images/background.png");
+}
+
+.background-layer#layer1 {
+  background-image: url("images/sky.png");
+}
+
+.menubg {
+  background-image: url("images/menu.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.titleimg {
+  transform: scale(0.8);
+}
+
+.button1 {
+  margin-bottom: -100px;
+}
+
+.button1 img {
+  width: 22%;
+  height: 22%;
+}
+
+.button2 img {
+  width: 22%;
+  height: 22%;
+}
+
+.bg {
+  background-image: url("images/menu.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creditframe img {
+  position: absolute;
+}
+
+.credittxt {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  text-align: center;
+}
+
+.back img {
+  height: 112px;
+  width: 112px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.char {
+  height: 180px;
+  width: auto;
+  transition: transform 0.1s ease-out;
+  position: absolute;
+  position: relative;
+  transform: translateX(50px);
+}
+
+.score {
+  position: absolute;
+  font-size: 24px;
+  color: white;
+}
+
+.hud {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreboard {
+  position: absolute;
+  height: 128px;
+  width: 192px;
+}
+
+.ghost {
+  width: 148px;
+  height: 148px;
+  background-image: url("images/ghost.gif");
+  background-size: 148px 148px;
+  position: absolute;
+  top: 67%;
+  right: -50px;
+  animation: ghost 5s linear infinite;
+}
+
+@keyframes ghost {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(-110vw);
+  }
+}

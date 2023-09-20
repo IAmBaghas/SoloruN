@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>SoloruN</title>
+    </head>
+    <body>
+
+        <audio id="bgm" autoplay loop>
+            <source src="audio/bgm.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="run" autoplay loop>
+            <source src="audio/run.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="death">
+            <source src="audio/death.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="background-container">
+            <div class="background-layer" id="layer1"></div>
+            <div class="background-layer" id="layer2"></div>
+            <div class="background-layer" id="layer3"></div>
+        </div>
+
+        <div class="back">
+            <a href="index.html">
+                <img src="images/back.png">
+            </a>
+        </div>
+
+        <div class="content">
+            <div class="hud">
+                <img src="images/blueframe.png" class="scoreboard">
+                <div class="score" id="score">0</div>
+            </div>
+            <div class="gameplay">
+                <div class="player">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <img src="images/char.gif" class="char" id="player">
+                </div>
+                <div class="ghost" id="ghost"></div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>

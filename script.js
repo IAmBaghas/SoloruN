@@ -54,7 +54,7 @@ function jump() {
             player.style.transform = "translate(50px, 0px)";
             // player.style.transform = "translateX(50px)";
             isJumping = false;
-        }, 750);
+        }, 700);
     }
 }
 
